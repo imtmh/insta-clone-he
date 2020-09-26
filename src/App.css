@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+/* App.css */
+
+html {
+  font-size: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(244, 244, 244);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 40px;
+
+}
+
+.sticky-header {
+  /* position: fixed;
+  top: 0;
+  width: 100% */
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.card-list {
+  margin-top: 3rem;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  margin-bottom: 2rem;
+  background-color: white;
+}
+
+.card-title {
+  margin-bottom: .5rem;
+  font-size: 3.2rem;
+}
+
+.card-image {
+  margin: 0 auto;
+  display: grid;
+  width: 100%;
+}
+
+.card-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: lightskyblue; */
+  /* padding: 1rem; */
+}
+
+.button {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  background-color: rgb(101 96 96 / 75%);
   color: white;
+  padding: 1rem 2rem;
+  border: 1px solid rgb(101 96 96 / 75%);
+  border-radius: 20px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background-color 250ms;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button:hover {
+  background-color: rgb(12 20 117 / 85%);
 }
